@@ -1,0 +1,24 @@
+<div class="container" ng-app="broadCasting">
+  <div class="wrapper" ng-controller="cntrl_1">
+    <div class="well well-1 text-center">
+      <h3>Controller1</h3>
+      <button class="btn btn-primary" ng-click="triggerBroadcast()">
+  {{mainCtrlBtnLabel}}
+  </button>
+    </div>
+    <div class="well well-2 text-center" ng-controller="cntrl_2">
+      <h3>Controller 2</h3>
+      <button class="btn btn-primary" ng-disabled="btn_status">
+              {{btn_status_msg}}
+
+  </button>
+    </div>
+    <div class="well well-3 text-center" ng-controller="cntrl_3">
+      <h3>Controller 3</h3>
+      <button class="btn btn-primary" ng-disabled="btn_status">
+               {{btn_status_msg}}
+ 
+  </button>
+    </div>
+  </div>
+</div>
